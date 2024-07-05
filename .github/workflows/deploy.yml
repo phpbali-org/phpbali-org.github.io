@@ -1,0 +1,35 @@
+name: Deploy Jigsaw site to GitHub Pages
+
+on:
+  # Runs on pushes targeting default branch
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Composer Dependencies
+        run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      - name: Install NPM Dependencies
+        run: npm install
+      - name: Build Site
+        run: npm run production
+      - name: Create CNAME File
+        run: echo "phpbali.org" >> build_production/CNAME
+      - name: Stage Files
+        run: git add -f build_production
+      - name: Commit Files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git commit -m "Build for deploy"
+      - name: Publish
+        run: |
+          git subtree split --prefix build_production -b gh-pages
+          git push -f origin gh-pages:gh-pages
+          git branch -D gh-pages
