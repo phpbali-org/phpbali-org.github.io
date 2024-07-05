@@ -19,8 +19,12 @@ jobs:
           php-version: '8.2'
       - name: Install Composer Dependencies
         run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
       - name: Install NPM Dependencies
-        run: npm install
+        run: npm ci
       - name: Build Site
         run: npm run production
       - name: Create CNAME File
