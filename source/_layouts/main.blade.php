@@ -10,6 +10,15 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="text-gray-900 font-sans antialiased">
-        @yield('body')
+        <div class="menu-underlay"></div>
+        <div class="flex flex-col min-h-screen">
+            @include('_partials.header')
+            
+            <main class="flex flex-col flex-auto">
+                @yield('body')
+            </main>
+
+            @include('_partials.footer')
+        </div>
     </body>
 </html>
