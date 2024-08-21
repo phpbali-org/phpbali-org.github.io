@@ -41,19 +41,19 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Kresna Satya',
-                        'avatar' => ''
+                        'avatar' => 'https://avatars.githubusercontent.com/u/11099186?v=4'
                     ],
                     [
                         'name' => 'Wahyu Budi Saputra',
-                        'avatar' => ''
+                        'avatar' => 'https://avatars.githubusercontent.com/u/30768993?v=4'
                     ],
                     [
                         'name' => 'Budi Surya Darma',
-                        'avatar' => '',
+                        'avatar' => 'https://avatars.githubusercontent.com/u/16449020?v=4',
                     ],
                     [
                         'name' => 'Teofilus Candra',
-                        'avatar' => '',
+                        'avatar' => 'https://avatars.githubusercontent.com/u/8913995?v=4',
                     ]
                 ]
             ]
@@ -76,7 +76,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Trimikha Valentius',
-                        'avatar' => ''
+                        'avatar' => 'https://avatars.githubusercontent.com/u/890146?v=4'
                     ]
                 ]
             ],
@@ -86,7 +86,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Wayan Jimmy',
-                        'avatar' => ''
+                        'avatar' => 'https://avatars.githubusercontent.com/u/1282808?v=4'
                     ]
                 ]  
             ],
@@ -96,7 +96,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Marvel Alexius',
-                        'avatar' => '',
+                        'avatar' => 'https://avatars.githubusercontent.com/u/19234751?v=4',
                     ]
                 ]
             ]
@@ -119,7 +119,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Steeven Adrian Salim',
-                        'avatar' => '',
+                        'avatar' => 'https://avatars.githubusercontent.com/u/218405?v=4',
                     ]
                 ],
             ]
@@ -142,7 +142,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Kresna Satya',
-                        'avatar' => ''
+                        'avatar' => 'https://avatars.githubusercontent.com/u/11099186?v=4'
                     ]
                 ],
             ],
@@ -152,7 +152,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Ari Sudarma',
-                        'avatar' => '',
+                        'avatar' => 'https://avatars.githubusercontent.com/u/17841013?v=4',
                     ]
                 ],
             ],
@@ -162,7 +162,7 @@ return [
                 'speakers' => [
                     [
                         'name' => 'Dody Prasetyo',
-                        'avatar' => '',
+                        'avatar' => 'https://avatars.githubusercontent.com/u/20751329?v=4',
                     ],
                 ],
             ]
