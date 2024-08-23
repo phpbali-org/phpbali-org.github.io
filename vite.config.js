@@ -14,17 +14,6 @@ export default ({ command }) => defineConfig({
             input: resolve(__dirname + '/source/_assets/js/main.js')
         },
     },
-    server: {
-        // required to load scripts from custom host
-        cors: {
-            origin: "*"
-        },
-        
-        // We need a strict port to match on PHP side.
-        // You can change it. But, please update it on your .env file to match the same port
-        strictPort: true,
-        port: 5173
-    },
     plugins: [
         jigsaw()
     ]
