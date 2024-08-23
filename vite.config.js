@@ -48,11 +48,11 @@ function jigsaw() {
 
     return {
         name: 'jigsaw',
-        async closeBundle() {
+        closeBundle() {
             console.log('Build complete. Running binary command...');
             jigsaw('production')
         },
-        async handleHotUpdate({ file , server }) {
+        handleHotUpdate({ file , server }) {
             if (file.includes('build_')) {
                 return;
             }
