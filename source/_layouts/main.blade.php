@@ -8,8 +8,16 @@
         <meta name="image" content="/assets/images/phpbali-logo.png">
         <link rel="icon" type=image/png href="/assets/images/favicon.png">
         <title>{{ $page->title }}</title>
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        @if($page->production)
+            @php
+                $manifest = json_decode(file_get_contents(public_path('/assets/build/.vite/manifest.json')), true);
+            @endphp
+            <script type="module" src="/assets/build/{{$manifest['source/_assets/js/main.js']['file']}}"></script>
+            <link rel="stylesheet" href="/assets/build/{{$manifest['source/_assets/js/main.js']['css'][0]}}">
+        @else
+            <script type="module" crossorigin src="{{ $page->viteClientUrl }}"></script>
+            <script type="module" crossorigin src="{{ $page->viteUrl }}/source/_assets/js/main.js"></script>
+        @endif
     </head>
     <body class="text-gray-900 font-sans antialiased">
         <div class="menu-underlay"></div>

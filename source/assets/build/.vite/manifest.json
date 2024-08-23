@@ -1,0 +1,11 @@
+{
+  "source/_assets/js/main.js": {
+    "file": "main-BLEzA8au.js",
+    "name": "main",
+    "src": "source/_assets/js/main.js",
+    "isEntry": true,
+    "css": [
+      "main-DX3Ve2mL.css"
+    ]
+  }
+}
