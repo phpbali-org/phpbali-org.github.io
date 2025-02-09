@@ -37,6 +37,9 @@ function jigsaw() {
 
     return {
         name: 'jigsaw',
+        buildStart() {
+            jigsaw('local')
+        },
         closeBundle() {
             console.log('Build complete. Running binary command...');
             jigsaw('production')
