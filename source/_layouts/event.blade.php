@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <p class="text-justify break-words mx-4" id="eventDesc">{{ $page->desc }}</p>
+    <p class="text-justify break-words mx-4" id="eventDesc">{{ $page->description }}</p>
 
     <div class="my-8 md:w-3/4 m-auto">
         <h1 class="text-3xl mb-4 text-center">Topics</h1>
