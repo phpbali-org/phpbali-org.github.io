@@ -1,3 +1,8 @@
+---
+title: Events - PHPBali
+description: Events in PHPBali community.
+---
+
 @extends('_layouts.main')
 
 @section('body')
