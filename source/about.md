@@ -1,6 +1,8 @@
 ---
 extends: _layouts.about
-section: aboutContent
+section: about.content
+title: About - PHPBali
+description: About PHPBali community in Bahasa Indonesia.
 ---
 
 Komunitas PHPBali membahas tentang bahasa pemrograman PHP dan pengembangan web yang ada di Bali. Umumnya kami mengadakan kegiatan minimal 3 kali dalam satu tahun entah dalam bentuk pertemuan (meetup) atau loka karya (workshop).
