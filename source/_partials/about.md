@@ -1,6 +1,4 @@
 ---
-extends: _layouts.about
-section: about.content
 title: About - PHPBali
 description: About PHPBali community in Bahasa Indonesia.
 ---
